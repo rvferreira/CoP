@@ -1,0 +1,21 @@
+#fitness-def label {
+	color: #000;
+}
+
+#equation-box {
+	position: relative;
+	display: inline-block;
+}
+
+div.indicator {
+	background-color: #03a9f4 !important;
+}
+
+#eval-tabs-area li a {
+	color: #03a9f4 !important;
+}
+
+#eval-tabs-area li.disabled a {
+	color: #b3e5fc !important;
+}
+

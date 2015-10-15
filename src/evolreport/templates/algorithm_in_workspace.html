@@ -1,0 +1,107 @@
+{% load staticfiles %}
+
+<script type="text/javascript" src="{% static 'evolreport/js/alg_settings.js' %}"></script>
+
+<div id="alg-wrapper" class="section" style="padding-top:28px;">
+	<div class="row">
+		<div class="container">
+			<div class="col s12">
+				<ul id="eval-tabs-area" class="tabs">
+					<li class="tab col s3"><a href="#alg-settings">Algorithm Settings</a></li>
+				</ul>
+			</div>
+			<div id="eval-container">
+				<div id="alg-settings" class="col s12">
+					<div class="row">
+						<form id="alg-params">
+
+							<div style="padding-top:28px;" class="col l4 s12">
+								<div class="row">
+									<div class="input-field col s12">
+										<select>
+											<option value="1">Genetic Algorithm</option>
+											<option value="2">Evolutive Strategy</option>
+											<option value="3">Differential Evolution</option>
+										</select>
+										<label>Algorithm to Analyze</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s6">
+										<span class="right-align">Population size:</span>
+									</div>
+									<div class="col s6">
+										<span class="range-field">
+											<input type="range" id="test5" min="1" max="19999" />
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s6">
+										<span class="right-align">Mutation Rate:</span>
+									</div>
+									<div class="col s6">
+										<span class="range-field">
+											<input type="range" id="test5" min="0" max="100" />
+										</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s6">
+										<span class="right-align">Dimensions:</span>
+									</div>
+									<div class="col s6">
+										<span class="range-field">
+											<input type="range" id="test5" min="1" max="11" />
+										</span>
+									</div>
+								</div>
+							</div>
+
+							<div style="padding-top:28px;" class="col l4 offset-l1 s6">
+								<div class="row">
+									<div class="col s12">
+										Measures:
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<input type="checkbox" class="filled-in" id="best-fitness-eval-toggle" />
+										<label for="best-fitness-eval-toggle">Best-fitness per generation</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<input type="checkbox" class="filled-in" id="mean-fitness-eval-toggle" />
+										<label for="mean-fitness-eval-toggle">Mean-fitness per generation</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<input type="checkbox" class="filled-in" id="worst-fitness-eval-toggle" />
+										<label for="worst-fitness-eval-toggle">Worst-fitness per generation</label>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col s12">
+										<input type="checkbox" class="filled-in" id="conv-time-eval-toggle" />
+										<label for="conv-time-eval-toggle">Converging Time</label>
+									</div>
+								</div>
+							</div>
+
+
+							<div style="position:relative;padding-top:28px;top:5rem;" class="col l3 s6 center">
+								<a id="run-alg" class="btn-floating btn-large waves-effect waves-light teal lighten-1"><i class="material-icons">play_arrow</i></a>
+							</div>
+						</form>
+
+					</div>
+				</div>
+				
+			</div>
+			<div id="alg-footer" class="col s12"><p class="flow-text">TODO Change dynamically</p></div>
+		</div>
+	</div>
+</div>
+
