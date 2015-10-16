@@ -1,1 +1,0 @@
-ACKLEY_TEX = 'http://chart.apis.google.com/chart?cht=tx&chl=-20\\:exp\\Bigg(-0.2\\:\sqrt{\\frac{1}{d}\:\sum_{i=1}^{d}x_i^{2}}\Bigg)-exp\Bigg(\\frac{1}{d}\:\sum_{i=1}^{d}cos(2\pi x_i)\Bigg)+20+exp(1)'

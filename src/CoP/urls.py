@@ -19,9 +19,10 @@ from django.conf import settings
 from django.conf.urls.static import static
 
 urlpatterns = [
-    url(r'^admin/', include(admin.site.urls)),
+    url(r'^admin/$', include(admin.site.urls)),
     #projects
-	url(r'^evolutives_report/', 'evolreport.views.index', name='report'),
+	url(r'^evolutives_report/best_fitness.png/$', 'evolreport.views.test_matplotlib', name='graph'),
+    url(r'^evolutives_report/$', 'evolreport.views.index', name='report'),
 ]
 
 if settings.DEBUG:
